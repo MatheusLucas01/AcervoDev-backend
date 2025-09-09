@@ -6,6 +6,7 @@ app.database = database // Passando as configurações do banco de dados, que ir
 
 consign()
     .then('./config/middlewares.js')
+    .then('./api/validation.js')
     .then('./api')
     .then('./config/routes.js')
     .into(app) // Irá injetar em todos arquivos como parâmetro.
